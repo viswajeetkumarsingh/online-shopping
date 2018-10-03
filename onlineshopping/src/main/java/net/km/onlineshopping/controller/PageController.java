@@ -67,7 +67,7 @@ public class PageController {
 		Category category = null;
 		category = categoryDAO.get(id);
 		
-		mv.addObject("title", "All Products");
+		mv.addObject("title",category.getName());
 		
 		//Passing the list of categories
 		mv.addObject("categories", categoryDAO.list());

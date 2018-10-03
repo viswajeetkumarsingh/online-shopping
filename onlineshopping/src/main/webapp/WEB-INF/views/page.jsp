@@ -63,8 +63,7 @@
 			</c:if>
 
 			<!-- Load only when user clicks contact -->
-			<c:if
-				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listProducts.jsp"%>
 			</c:if>
 		</div>
@@ -76,10 +75,10 @@
 
 		<!-- JavaScript -->
 		<!-- jQuery -->
-		<script src="${js}/jquery-1.10.2.js"></script>
+		<script src="${js}/jquery.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
-		<script src="${js}/bootstrap.js"></script>
+		<script src="${js}/bootstrap.min.js"></script>
 
 		<!-- Self coded JavaScript -->
 		<script src="${js}/myapp.js"></script>
